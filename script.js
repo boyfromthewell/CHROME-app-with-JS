@@ -64,7 +64,7 @@ const calculator={
         console.log(a-b);
     },
     div: function(a,b){
-        console.log(a/b);
+        return a/b;
     },
     power: function(a,b){
         console.log(a**b);
@@ -75,3 +75,32 @@ calculator.add(1,2);
 calculator.minus(3,2);
 calculator.div(5,2);
 calculator.power(2,5);
+//return
+const age=96;
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner+2;
+}
+
+const krAge=calculateKrAge(age);
+
+console.log(krAge);
+
+const divResult=calculator.div(10,2);
+//conditionals
+const age1=parseInt(prompt("how old are you")); //prompt->오래된 함수 (왠만하면 사용 x)
+
+if(isNaN(age1)||age1<0){
+    console.log("please write a real positive number");
+}
+else if(age1<18){
+    console.log("you are too young");
+}
+else if (age1>=18&&age1<=50){
+    console.log("you can drink");
+}
+else if (age1>50&&age1<=80){
+    console.log("you should exercise");
+}
+else if(age1>80){
+    console.log("you can do whatever you want");
+} //js 는 이퀄 낫이퀄 연산자 ===, !== (==, != 아님!)
