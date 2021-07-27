@@ -10,7 +10,7 @@
 * 실시간위치, 온도, 날씨
 * 사용자 이름 저장
 * todo list 저장, 삭제 가능
-* 
+
 [링크](https://boyfromthewell.github.io/CHROME-app-with-JS/index.html)
 ***
 Clone coding with JAVA script
