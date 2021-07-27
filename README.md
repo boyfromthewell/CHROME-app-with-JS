@@ -11,6 +11,6 @@
 * 사용자 이름 저장
 * todo list 저장, 삭제 가능
 * 
-[링크](https://github.com/boyfromthewell/CHROME-app-with-JS/index.html)
+[링크](https://boyfromthewell.github.io/CHROME-app-with-JS/index.html)
 ***
 Clone coding with JAVA script
