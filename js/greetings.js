@@ -16,6 +16,10 @@ function paintGreeting(username) {
     greeting.innerText = "Hello " + username; //비어있는 h1안에 문구 추가
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
+function randomColor() {
+    const Rancolor = "#" + Math.round(Math.random() * 0xffffff).toString(16);
+    greeting.style.color = Rancolor;
+}
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) { //저장된 유저이름 없을경우
@@ -25,6 +29,7 @@ if (savedUsername === null) { //저장된 유저이름 없을경우
 else { //저장된 유저 이름 있을경우
     paintGreeting(savedUsername);
 }
+greeting.addEventListener("mouseover", randomColor);
 //localStorage.setItem(key, value) //로컬 스토리지에 값 저장
 //            .removeItem 값 제거
 //            .getItem 값 불러오기

@@ -1,6 +1,9 @@
 .hidden{
     display: none;
 }
+*{
+    font-family: 'Noto Serif KR', serif;
+}
 img {
     position: absolute;
     width: 100%;
@@ -8,4 +11,120 @@ img {
     top: 0;
     left: 0;
     z-index: -1;
+}
+#clock {
+    font-size: 80px;
+    text-align: center;
+    color: azure;
+    margin: 0;
+    text-shadow: 5px 5px 10px rgb(58 58 58);
+    margin-bottom: 20px;
+}
+#greeting {
+    font-size: 50px;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.973);
+    margin-top: -5px;
+}
+#greeting:hover{
+    font-size: 60px;
+    text-shadow: 5px 5px 10px rgb(58 58 58);
+}
+#login-form, #todo-form{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#todo-form input{
+    width: 240px;
+}
+#login-form{
+    margin-top: 150px;
+}
+#location{
+    position: fixed;
+    font-size: 30px;
+    text-align: right;
+    color: azure;
+    left: 0;
+    right: 60px;
+    top: 20px;
+    text-shadow: 5px 5px 10px rgb(58 58 58);
+}
+input[type=text]{
+    border: none;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    transition-duration: 0.4s;
+    color: white;
+}
+input::placeholder{
+    color:white;
+}
+#login-button{
+    font-size: 15px;
+    background-color: white;
+    border: gray;
+    color: rgb(2, 1, 1);
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 3px 8px;
+}
+button:active{
+    transform: scale(1.2);
+}
+#quote{
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    color: azure;
+    margin: 0;
+    text-shadow: 5px 5px 10px rgb(58 58 58);
+    margin-bottom: 20px;
+}
+footer{
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    color: white;
+    right:0;
+    left:40px;
+    bottom:30px;
+    text-shadow: 5px 5px 10px rgb(58 58 58);
+    font-size:18px;
+}
+header{
+    padding-bottom: 120px;
+}
+#todo-list{
+    color:white;
+    text-shadow: 5px 5px 10px rgb(58 58 58);
+}
+#todo-list li{
+    text-align: center;
+    list-style-position: inside;
+    list-style-type: square;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+li button{
+    color: white;
+    background: transparent;
+    transition-duration: 0.5s;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 3px 8px 2px 8px;
+    text-align: center;
+}
+li button:hover{
+    background: white;
+    color: red;
+}
+li span{
+    margin-right: 10px;
 }

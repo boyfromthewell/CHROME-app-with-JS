@@ -6,13 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Hello, stranger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <div id="location">
+        </div>
+    </header>
     <form class="hidden" id="login-form">
-        <input required maxlength="15 type=" text" placeholder="What is your name?" />
-        <button>Log In</button>
+        <input required maxlength="15" type="text" placeholder="What is your name?" />
+        <button id="login-button">Log In</button>
     </form>
     <h2 id="clock">00:00:00</h2>
     <h1 id="greeting" class="hidden"></h1>
@@ -21,13 +28,14 @@
     </form>
     <ul id="todo-list"></ul>
     <div id="quote">
-        <span></span>
+        <span></span><br>
         <span></span>
     </div>
-    <div id="weather">
-        <span></span>
-        <span></span>  
-    </div>
+    <footer>
+        <div id="weather">
+            <span></span>
+        </div>
+    </footer>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
